@@ -41,3 +41,5 @@ gulp.task('serve', function () {
 });
 
 gulp.task('default', ['html', 'js', 'serve']);
+
+gulp.task('deploy', ['html', 'js']);

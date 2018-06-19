@@ -1,18 +1,11 @@
 #!/bin/bash
 set -e # termina o script com um código diferente de 0 se alguma coisa falhar
 
-# try fix the angular install
-npm uninstall -g angular-cli
-npm uninstall -g @angular/cli
-npm cache verify
-npm cache clean --force
-npm install -g @angular/cli
-
 # instal all dependency
 npm install
 
 # roda o script de build da nossa aplicação
-ng build --prod --base-href=/wdashboard/
+gulp deploy
 
 # pull requests e commits para outras branches diferentes da master
 # não devem fazer o deploy, isso é opcional caso queira deletar as próximas 6 linhas
