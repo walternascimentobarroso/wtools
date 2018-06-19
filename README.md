@@ -2,7 +2,14 @@
 
 # wtools
 
-# Inicio
+# Instalação
 `npm install`
 
+# Execução
 `gulp`
+
+`localhost:3000`
+
+# Deploy
+
+`gulp deploy`
