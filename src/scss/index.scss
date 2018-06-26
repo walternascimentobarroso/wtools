@@ -1,0 +1,24 @@
+html {
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
+        monospace;
+    background-color: #292525;
+    color: #eaeaea;
+}
+
+.text-green {
+    color: #b5e853;
+}
+
+a {
+    color: #63c0f5;
+    text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+}
+
+code.highlighter-rouge {
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0px 3px;
+    margin: 0px -3px;
+    color: #aa759f;
+    border-radius: 2px;
+}
