@@ -5,7 +5,7 @@ var pug = require("gulp-pug");
 var sass = require("gulp-sass");
 
 /**
- * Copilando HTML (PUG Templat)
+ * Building the HTML (PUG Templat)
  */
 gulp.task("html", function() {
     return gulp
@@ -16,6 +16,13 @@ gulp.task("html", function() {
             })
         )
         .pipe(gulp.dest("./dist"));
+});
+
+/**
+ * Building images
+ */
+gulp.task("img", function() {
+    return gulp.src("src/img/*.*").pipe(gulp.dest("./dist/img/"));
 });
 
 /**
@@ -47,6 +54,7 @@ gulp.task("serve", function() {
 
     gulp.watch("src/*.pug", ["html"]);
     gulp.watch("src/js/*.js", ["js"]);
+    gulp.watch("src/img/*.*", ["img"]);
     gulp.watch("src/scss/*.scss", ["sass"]);
     gulp.watch("./dist/*.*").on("change", browserSync.reload);
     gulp.watch("./dist/**/*.*").on("change", browserSync.reload);
@@ -55,9 +63,9 @@ gulp.task("serve", function() {
 /**
  * Gulp
  */
-gulp.task("default", ["html", "js", "sass", "serve"]);
+gulp.task("default", ["html", "js", "sass", "img", "serve"]);
 
 /**
  * Gulp deploy
  */
-gulp.task("deploy", ["html", "js", "sass"]);
+gulp.task("deploy", ["html", "js", "sass", "img"]);
