@@ -9,10 +9,12 @@ html(lang="pt-br")
         title Wtools
     body
         .topnav
-            a.active Wtools
+            a(href="/").active Wtools
 
-        //- code.highlighter-rouge keyword
         h1.text-green Transformador de Texto - Maiúsculas <> Minúsculas
+        a.active menu
+        br
+        code.highlighter-rouge keyword
         form
             textarea(name="lower", cols="30", rows="10")
             textarea(name="upper", cols="30", rows="10")

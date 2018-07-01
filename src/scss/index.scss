@@ -50,6 +50,11 @@ code.highlighter-rouge {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
+}
+
+.topnav a.active:hover {
+    background-color: rgba(0, 0, 0, 0.9);;
+    color: #aa759f;
 }
