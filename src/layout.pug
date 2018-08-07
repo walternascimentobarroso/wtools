@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="theme-color", content="#ee0979")
+        link(href="css/index.css", rel="stylesheet")
+        link(rel="icon", href="img/favicon.png")
+        title Wtools
+    body
+        .topnav
+            a(href="/").brand Wtools
+            a(href="/") Wtools
+
+        nav#menu
+            ul
+                li
+                    a(href="#") Inicio
+                li
+                    a(href="#") Geradores
+                    ul.submenu
+                        li
+                            a(href="cpf.html") CPF
+                        li
+                            a(href="cnpj.html") CNPJ
+                li
+                    a(href="#") Texto
+                    ul.submenu
+                        li
+                            a(href="upperandlower.html") Maiúsculas <> Minúsculas
+        main
+            block content
+        block scripts

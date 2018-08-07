@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+    h1 Transformador de Texto - Maiúsculas <> Minúsculas
+
+    code.highlighter-rouge keyword
+    form
+        textarea(name="lower", cols="30", rows="10")
+        textarea(name="upper", cols="30", rows="10")
+        
+block scripts
+    script(src="js/index.js")

@@ -1,34 +1,5 @@
-<!DOCTYPE html>
-html(lang="pt-br")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        meta(name="theme-color", content="#ee0979")
-        link(href="css/index.css", rel="stylesheet")
-        link(rel="icon", href="img/favicon.png")
-        title Wtools
-    body
-        .topnav
-            a(href="/").brand Wtools
-            a(href="/") Wtools
+extends layout.pug
 
-        nav#menu
-            ul
-                li
-                    a(href="#") Inicio
-                li
-                    a(href="#") Geradores
-                    ul.submenu
-                        li
-                            a(href="#") CPF
-                        li
-                            a(href="#") CNPJ
-        main
-            h1 Transformador de Texto - Maiúsculas <> Minúsculas
-        
-            code.highlighter-rouge keyword
-            form
-                textarea(name="lower", cols="30", rows="10")
-                textarea(name="upper", cols="30", rows="10")
-    script(src="js/index.js")
+block content
+    h1 WTools
+    h2 Conjunto de Ferramentas para auxiliar no desenvolvimento.
