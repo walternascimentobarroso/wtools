@@ -81,7 +81,7 @@ main {
         width: 200px;
     }
 
-    li:hover .submenu {
+    li .submenu {
         display: block;
         width: 150px;
         max-height: 100px;
