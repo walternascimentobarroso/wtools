@@ -18,35 +18,44 @@ html(lang="pt-br")
                 li
                     a(href="/") Inicio
                 li
-                    a(href="#") Geradores
+                    a(href="#").clearlink Geradores
                     ul.submenu
+                        li
+                            a(href="persona.html") Gerador de persona
                         li
                             a(href="cpf.html") CPF
                         li
                             a(href="cnpj.html") CNPJ
+                        li
+                            a(href="password.html") Gerador de Senha
                 li
-                    a(href="#") Texto
+                    a(href="#").clearlink Texto
                     ul.submenu
                         li
-                            a(href="lorem.html") Gerador
+                            a(href="lorem.html") Lorem Ipsum
                         li
                             a(href="upperandlower.html") Maiúsculas <> Minúsculas
+                li
+                    a(href="#").clearlink Rede
+                    ul.submenu
                         li
-                            a(href="lorem.html") Lorem Ipsum
+                            a(href="data.html") Informações Rede
                 li
-                    a(href="data.html") Informações Rede
+                    a(href="#").clearlink Cores
+                    ul.submenu
+                        li
+                            a(href="rgbtohex.html") RGB <> HEX
                 li
-                    a(href="password.html") Gerador de Senha
+                    a(href="#").clearlink Outras
+                    ul.submenu
+                        li
+                            a(href="htmltopug.html") HTML <> PUG
+                        li
+                            a(href="imgdata.html") Imagem (Base64)
+                        li
+                            a(href="genaretefavicon.html") Gerador de Favicon
                 li
-                    a(href="rgbtohex.html") RGB <> HEX
-                li
-                    a(href="htmltopug.html") HTML <> PUG
-                li
-                    a(href="imgdata.html") Imagem (Base64)
-                li
-                    a(href="persona.html") Gerador de persona
-                li
-                    a(href="genaretefavicon.html") Gerador de Favicon
+                    a(href="about.html") Sobre
         main
             block content
         block scripts
