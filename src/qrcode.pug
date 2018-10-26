@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+    h1 Gerador de QRcode.
+    input#text
+    #qrcode
+
+block scripts
+    script(src="https://rawgit.com/davidshimjs/qrcodejs/master/qrcode.min.js")
+    script(src="js/qrcode.js")
