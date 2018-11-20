@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (comPontos) cpf = '' + n1 + n2 + n3 + '.' + n4 + n5 + n6 + '.' + n7 + n8 + n9 + '-' + d1 + d2;
         else cpf = '' + n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + d1 + d2;
 
-        alert(cpf);
+        document.getElementsByName("cpf")[0].value = cpf;
     }
 
-    gerarCPF();
+    document.getElementsByName("generate")[0].addEventListener("click", () => gerarCPF());
 });

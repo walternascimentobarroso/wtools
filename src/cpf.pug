@@ -2,14 +2,15 @@ extends layout.pug
 
 block content
     form
-        textarea(name="base", cols="30", rows="10")
-        textarea(name="result", cols="30", rows="10")
-        span Estado de Origem do CPF
-        span copiar cpf
-        button Gerar CPF
-        button Validar CPF
-        input(type='checkbox')
-        | Pontuação 
+        p
+            input(name="cpf")
+            //- span Estado de Origem do CPF
+            //- span copiar cpf
+        p
+            button(type='button', name='generate') Gerar CPF
+            button(type='button', name='validate') Validar CPF
+            input(type='checkbox')
+            | Pontuação 
 
         div 
             h1 Algoritmo
