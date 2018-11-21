@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
     function validarCPF(cpf) {
+        var cpf, add, rev, i;
         cpf = cpf.replace(/[^\d]+/g, '');
         if (cpf == '') return false;
         // Elimina CPFs invalidos conhecidos
@@ -37,38 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return true;
     }
 
-    function valida_cpf(cpf) {
-        var numeros, digitos, soma, i, resultado, digitos_iguais;
-        digitos_iguais = 1;
-        if (cpf.length < 11)
-            return false;
-        for (i = 0; i < cpf.length - 1; i++)
-            if (cpf.charAt(i) != cpf.charAt(i + 1)) {
-                digitos_iguais = 0;
-                break;
-            }
-        if (!digitos_iguais) {
-            numeros = cpf.substring(0, 9);
-            digitos = cpf.substring(9);
-            soma = 0;
-            for (i = 10; i > 1; i--)
-                soma += numeros.charAt(10 - i) * i;
-            resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-            if (resultado != digitos.charAt(0))
-                return false;
-            numeros = cpf.substring(0, 10);
-            soma = 0;
-            for (i = 11; i > 1; i--)
-                soma += numeros.charAt(11 - i) * i;
-            resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-            if (resultado != digitos.charAt(1))
-                return false;
-            return true;
-        }
-        else
-            return false;
-    }
-
     function randomiza(n) {
         var ranNum = Math.round(Math.random() * n);
         return ranNum;
@@ -78,8 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor));
     }
 
-    function gerarCPF() {
-        let comPontos = true; // TRUE para ativar e FALSE para desativar a pontuação.
+    function gerarCPF(comPontos) {
         let cpf;
         var n = 9;
         var n1 = randomiza(n);
@@ -104,5 +72,31 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementsByName("cpf")[0].value = cpf;
     }
 
-    document.getElementsByName("generate")[0].addEventListener("click", () => gerarCPF());
+    function maskCPF(cpf) {
+        cpf = cpf.replace(/\D/g, "")
+        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
+        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
+        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
+        return cpf
+    }
+
+    document.getElementsByName("generate")[0].addEventListener("click", () => {
+        let checked = document.getElementsByName("deletePoint")[0].checked;
+        gerarCPF(checked);
+    });
+    document.getElementsByName("validate")[0].addEventListener("click", () => {
+        let cpf = document.getElementsByName("cpf")[0].value;
+        console.log(validarCPF(cpf));
+    });
+
+    document.getElementsByName("deletePoint")[0].addEventListener("click", () => {
+        let checked = document.getElementsByName("deletePoint")[0].checked;
+        let cpf = document.getElementsByName("cpf")[0];
+        if (checked) {
+            cpf.value = maskCPF(cpf.value);
+        } else {
+            cpf.value = cpf.value.replace(/\D+/g, '');
+        }
+    });
+
 });
