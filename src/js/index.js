@@ -5,7 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
         $textarea_alternate = document.querySelector('textarea[name="alternate"]'),
         $button_alternate = document.querySelector('button[name="alternate"]'),
         $textarea_reverse = document.querySelector('textarea[name="reverse"]'),
-        $button_reverse = document.querySelector('button[name="reverse"]');
+        $button_reverse = document.querySelector('button[name="reverse"]'),
+        $textarea_first_letter = document.querySelector('textarea[name="first_letter"]'),
+        $button_first_letter = document.querySelector('button[name="first_letter"]'),
+        $textarea_first_word = document.querySelector('textarea[name="first_word"]'),
+        $button_first_word = document.querySelector('button[name="first_word"]');
 
     $textarea_lower.oninput = () => {
         $textarea_upper.value = $textarea_lower.value.toUpperCase();
@@ -31,5 +35,20 @@ document.addEventListener("DOMContentLoaded", function () {
         let text = $textarea_lower.value;
         text = text.split('').reverse().join('');
         $textarea_reverse.value = text;
+    };
+    
+    $button_first_letter.onclick = () => {
+        let text = $textarea_lower.value.toLowerCase().split(" ");
+        for (let a = 0; a < text.length; a++) {
+            let w = text[a];
+            text[a] = w[0].toUpperCase() + w.slice(1);
+        }
+        $textarea_first_letter.value = text.join(" ");
+    };
+
+    $button_first_word.onclick = () => {
+        let text = $textarea_lower.value.toLowerCase();
+        text = text[0].charAt(0).toUpperCase() + text.slice(1);
+        $textarea_first_word.value = text;
     };
 });
