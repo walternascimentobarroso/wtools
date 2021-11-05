@@ -1,16 +1,18 @@
-const menuEl = document.querySelector("#menu");
+const menuEl = document.querySelector("menu");
 
 const menu = [
-    { url: "/", description: "Home" },
+    { url: "/index.html", description: "Home" },
     { url: "/about.html", description: "About" },
 ];
 
 function loadMenu() {
+    let ul = document.createElement("ul");
     let newMenu = "";
     menu.forEach((el) => {
         newMenu += `<li><a href='${el.url}'>${el.description}</a></li>`;
     });
-    menuEl.innerHTML = newMenu;
+    ul.innerHTML = newMenu;
+    menuEl.appendChild(ul);
 }
 
 loadMenu();
