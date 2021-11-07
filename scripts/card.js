@@ -2,6 +2,7 @@ const mainEl = document.querySelector("main");
 
 const cards = [
     { url: "/whatsapp.html", description: "Whatsapp" },
+    { url: "/characterCounter.html", description: "Character Counter" },
 ];
 
 function loadCard() {
