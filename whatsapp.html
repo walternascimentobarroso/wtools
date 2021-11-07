@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <h1>Gerador de link pro whatsapp</h1>
+            <form name="form_main">
+                <label for="number">Número: </label>
+                <input type="text" name="number" id="number" /> <br />
+                <label for="message">Mensagem: </label>
+                <input type="text" name="message" id="message" /> <br />
+                <p id="end_url"></p>
+                <button type="button" onclick="generateLink()">Gerar</button>
+            </form>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/whatsapp.js"></script>
+    </body>
+</html>

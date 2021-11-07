@@ -1,8 +1,7 @@
 const mainEl = document.querySelector("main");
 
 const cards = [
-    { url: "/index.html", description: "Home" },
-    { url: "/about.html", description: "About" },
+    { url: "/whatsapp.html", description: "Whatsapp" },
 ];
 
 function loadCard() {
