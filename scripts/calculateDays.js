@@ -1,4 +1,4 @@
-const daysEL = document.getElementById("days");
+const daysEl = document.getElementById('days');
 
 const second = 1000;
 const minute = second * 60;
@@ -11,5 +11,5 @@ function countDays() {
 
     let diff = date_end.getTime() - date_ini.getTime();
 
-    daysEL.innerText = Math.floor(diff / day);
+    daysEl.innerText = Math.floor(diff / day);
 }
