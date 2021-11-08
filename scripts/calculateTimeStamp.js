@@ -1,5 +1,5 @@
-const timestampEl = document.getElementById("timestamp");
-const dateEl = document.getElementById("date");
+const timestampEl = document.getElementById('timestamp');
+const dateEl = document.getElementById('date');
 
 function dateToTimestamp() {
     let date_ini = document.form_main.date_ini.value;
@@ -11,5 +11,5 @@ function dateToTimestamp() {
 function timestampToDate() {
     let timestamp_end = document.form_main.timestamp_end.value;
     let date_ini = new Date(parseInt(timestamp_end));
-    dateEl.innerText = date_ini.toLocaleString("pt-BR");
+    dateEl.innerText = date_ini.toLocaleString('pt-BR');
 }

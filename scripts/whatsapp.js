@@ -1,5 +1,5 @@
-const outputEl = document.getElementById("end_url");
-const URL = "https://wa.me/";
+const outputEl = document.getElementById('end_url');
+const URL = 'https://wa.me/';
 
 function generateLink() {
     let number = document.form_main.number.value;
