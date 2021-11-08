@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <h1>Contador de caracteres</h1>
+
+            <form name="form_main">
+                <fieldset>
+                    <legend>Contador</legend>
+                    <label for="text">Texto:</label> <br />
+                    <textarea
+                        name="text"
+                        id="text"
+                        cols="30"
+                        rows="10"
+                        oninput="countText()"
+                    ></textarea
+                    ><br />
+                    <label for="characters">Caracteres: </label
+                    ><span id="characters"></span><br />
+                    <label for="words">Palavras: </label><span id="words"></span
+                    ><br />
+                    <label for="rows">Linhas: </label><span id="rows"></span
+                    ><br />
+                </fieldset>
+            </form>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/characterCounter.js"></script>
+    </body>
+</html>

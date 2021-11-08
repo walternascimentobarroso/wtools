@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <h1>Calcular TimeStamp</h1>
+            <form name="form_main">
+                <fieldset>
+                    <legend>Date to TimeStamp</legend>
+                    <label for="date_ini">Data:</label>
+                    <input
+                        name="date_ini"
+                        id="date_ini"
+                        size="20"
+                        type="date"
+                    /><br />
+                    <label for="hour_ini">Data:</label>
+                    <input
+                        name="hour_ini"
+                        id="hour_ini"
+                        size="20"
+                        type="time"
+                    /><br />
+                    <label for="timestamp">TimeStamp:</label>
+                    <span id="timestamp"></span><br />
+
+                    <button type="button" onclick="dateToTimestamp()">
+                        Gerar
+                    </button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>TimeStamp To Date</legend>
+                    <label for="timestamp_end">TimeStamp:</label>
+                    <input
+                        name="timestamp_end"
+                        id="timestamp_end"
+                        type="text"
+                    /><br />
+                    <label for="date">Data:</label>
+                    <span id="date"></span><br />
+
+                    <button type="button" onclick="timestampToDate()">
+                        Gerar
+                    </button>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/calculateTimeStamp.js"></script>
+    </body>
+</html>
