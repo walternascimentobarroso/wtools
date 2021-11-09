@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <h1>Calcular ano bissexto</h1>
+            <form name="form_main">
+                <label for="date">Data:</label>
+                <input name="date" id="date" size="20" type="date" /><br />
+                <label for="type">Tipo:</label>
+                <span id="type"></span><br />
+                <label for="day">Dia da Semana:</label>
+                <span id="day"></span><br />
+
+                <input
+                    name="button"
+                    value="Gerar"
+                    onclick="calcularBissexto()"
+                    type="button"
+                />
+            </form>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/calculatingLeapYear.js"></script>
+    </body>
+</html>
