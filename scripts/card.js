@@ -5,6 +5,7 @@ const cards = [
     { url: '/characterCounter.html', description: 'Character Counter' },
     { url: '/calculateTimeStamp.html', description: 'Calculate TimeStamp' },
     { url: '/calculateDays.html', description: 'Calculate Days' },
+    { url: '/calculatingLeapYear.html', description: 'Calculate Leap Year' },
 ];
 
 function loadCard() {
