@@ -6,6 +6,7 @@ const cards = [
     { url: '/calculateTimeStamp.html', description: 'Calculate TimeStamp' },
     { url: '/calculateDays.html', description: 'Calculate Days' },
     { url: '/calculatingLeapYear.html', description: 'Calculate Leap Year' },
+    { url: '/todo.html', description: 'TODO' },
 ];
 
 function loadCard() {
