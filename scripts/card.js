@@ -7,6 +7,7 @@ const cards = [
     { url: '/calculateDays.html', description: 'Calculate Days' },
     { url: '/calculatingLeapYear.html', description: 'Calculate Leap Year' },
     { url: '/todo.html', description: 'TODO' },
+    { url: '/countdown.html', description: 'Countdown' },
 ];
 
 function loadCard() {
