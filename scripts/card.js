@@ -8,6 +8,7 @@ const cards = [
     { url: '/calculatingLeapYear.html', description: 'Calculate Leap Year' },
     { url: '/todo.html', description: 'TODO' },
     { url: '/countdown.html', description: 'Countdown' },
+    { url: '/transformingLetters.html', description: 'Transforming Letters' },
 ];
 
 function loadCard() {
