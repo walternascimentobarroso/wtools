@@ -10,6 +10,7 @@ const cards = [
     { url: '/countdown.html', description: 'Countdown' },
     { url: '/transformingLetters.html', description: 'Transforming Letters' },
     { url: '/copy.html', description: 'Copy' },
+    { url: '/stopwatch.html', description: 'Stopwatch' },
 ];
 
 function loadCard() {
