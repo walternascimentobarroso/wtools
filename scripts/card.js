@@ -9,6 +9,9 @@ const cards = [
     { url: '/todo.html', description: 'TODO' },
     { url: '/countdown.html', description: 'Countdown' },
     { url: '/transformingLetters.html', description: 'Transforming Letters' },
+    { url: '/copy.html', description: 'Copy' },
+    { url: '/stopwatch.html', description: 'Stopwatch' },
+    { url: '/currencyQuote.html', description: 'Currency Quote ' },
 ];
 
 function loadCard() {
