@@ -12,6 +12,7 @@ const cards = [
     { url: '/copy.html', description: 'Copy' },
     { url: '/stopwatch.html', description: 'Stopwatch' },
     { url: '/currencyQuote.html', description: 'Currency Quote ' },
+    { url: '/generatorCPFCNPJ.html', description: 'CPF and CNPJ Generator' },
 ];
 
 function loadCard() {
