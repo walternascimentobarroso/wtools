@@ -13,6 +13,7 @@ const cards = [
     { url: '/stopwatch.html', description: 'Stopwatch' },
     { url: '/currencyQuote.html', description: 'Currency Quote ' },
     { url: '/generatorCPFCNPJ.html', description: 'CPF and CNPJ Generator' },
+    { url: '/imageToBase64.html', description: 'Image To Base64' },
 ];
 
 function loadCard() {
