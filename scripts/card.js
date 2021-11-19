@@ -14,6 +14,8 @@ const cards = [
     { url: '/currencyQuote.html', description: 'Currency Quote ' },
     { url: '/generatorCPFCNPJ.html', description: 'CPF and CNPJ Generator' },
     { url: '/imageToBase64.html', description: 'Image To Base64' },
+    { url: '/showPassword.html', description: 'Show Password' },
+    { url: '/inputToSpan.html', description: 'Input to Span' },
 ];
 
 function loadCard() {
