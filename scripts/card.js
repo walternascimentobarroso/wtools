@@ -16,6 +16,7 @@ const cards = [
     { url: '/imageToBase64.html', description: 'Image To Base64' },
     { url: '/showPassword.html', description: 'Show Password' },
     { url: '/inputToSpan.html', description: 'Input to Span' },
+    { url: '/numberGenerator.html', description: 'Number Generator' },
 ];
 
 function loadCard() {

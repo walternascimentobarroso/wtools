@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <h1>Gerador de números</h1>
+
+            <form name="form_main">
+                <div>
+                    <label for="number">Quantidade</label>
+                    <input type="number" id="number" />
+                </div>
+                <div>
+                    <label for="type">Tipo</label>
+                    <input type="radio" name="type" id="odd" value="odd" />
+                    <label for="odd">Impar</label>
+                    <input type="radio" name="type" id="even" value="even" />
+                    <label for="even">Par</label>
+                    <input
+                        type="radio"
+                        name="type"
+                        id="real"
+                        value="real"
+                        checked="checked"
+                    />
+                    <label for="real">Reais</label>
+                </div>
+
+                <button type="button" id="btnGenerate" name="btnGenerate">
+                    Gerar
+                </button>
+
+                <div id="output"></div>
+            </form>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/numberGenerator.js"></script>
+    </body>
+</html>
