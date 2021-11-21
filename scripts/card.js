@@ -17,6 +17,7 @@ const cards = [
     { url: '/showPassword.html', description: 'Show Password' },
     { url: '/inputToSpan.html', description: 'Input to Span' },
     { url: '/numberGenerator.html', description: 'Number Generator' },
+    { url: '/validatorPassword.html', description: 'Validator Password' },
 ];
 
 function loadCard() {
