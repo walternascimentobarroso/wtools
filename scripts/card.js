@@ -18,6 +18,7 @@ const cards = [
     { url: '/inputToSpan.html', description: 'Input to Span' },
     { url: '/numberGenerator.html', description: 'Number Generator' },
     { url: '/validatorPassword.html', description: 'Validator Password' },
+    { url: '/autoComplete.html', description: 'Auto Complete' },
 ];
 
 function loadCard() {
