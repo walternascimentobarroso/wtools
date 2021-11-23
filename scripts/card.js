@@ -19,6 +19,7 @@ const cards = [
     { url: '/numberGenerator.html', description: 'Number Generator' },
     { url: '/validatorPassword.html', description: 'Validator Password' },
     { url: '/autoComplete.html', description: 'Auto Complete' },
+    { url: '/temperatureAPI.html', description: 'Temperature API' },
 ];
 
 function loadCard() {
