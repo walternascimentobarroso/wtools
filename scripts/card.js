@@ -20,6 +20,7 @@ const cards = [
     { url: '/validatorPassword.html', description: 'Validator Password' },
     { url: '/autoComplete.html', description: 'Auto Complete' },
     { url: '/temperatureAPI.html', description: 'Temperature API' },
+    { url: '/generatorQRCode.html', description: 'Generator QRCode' },
 ];
 
 function loadCard() {
