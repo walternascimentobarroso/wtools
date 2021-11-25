@@ -10,35 +10,42 @@
         <menu></menu>
 
         <main>
-            <h1>Gerador de números</h1>
+            <fieldset>
+                <legend>Gerador de números</legend>
 
-            <form name="form_main">
-                <div>
-                    <label for="number">Quantidade</label>
-                    <input type="number" id="number" />
-                </div>
-                <div>
-                    <label for="type">Tipo</label>
-                    <input type="radio" name="type" id="odd" value="odd" />
-                    <label for="odd">Impar</label>
-                    <input type="radio" name="type" id="even" value="even" />
-                    <label for="even">Par</label>
-                    <input
-                        type="radio"
-                        name="type"
-                        id="real"
-                        value="real"
-                        checked="checked"
-                    />
-                    <label for="real">Reais</label>
-                </div>
+                <form name="form_main">
+                    <div>
+                        <label for="number">Quantidade</label>
+                        <input type="number" id="numberEl" />
+                    </div>
+                    <div>
+                        <label for="type">Tipo</label>
+                        <input type="radio" name="type" id="odd" value="odd" />
+                        <label for="odd">Impar</label>
+                        <input
+                            type="radio"
+                            name="type"
+                            id="even"
+                            value="even"
+                        />
+                        <label for="even">Par</label>
+                        <input
+                            type="radio"
+                            name="type"
+                            id="real"
+                            value="real"
+                            checked="checked"
+                        />
+                        <label for="real">Reais</label>
+                    </div>
 
-                <button type="button" id="btnGenerate" name="btnGenerate">
-                    Gerar
-                </button>
+                    <button type="button" id="generateEl" name="generate">
+                        Gerar
+                    </button>
 
-                <div id="output"></div>
-            </form>
+                    <output id="outputEl"></output>
+                </form>
+            </fieldset>
         </main>
 
         <footer></footer>

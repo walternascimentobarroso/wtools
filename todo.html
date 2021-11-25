@@ -10,17 +10,15 @@
         <menu></menu>
 
         <main>
-            <h1>Lista de tarefas</h1>
-
-            <form name="form_main">
+            <fieldset>
+                <legend>Lista de tarefas</legend>
                 <label for="task">Tarefa: </label>
-                <input type="text" name="task" id="task" /> <br />
-                <button type="button" onclick="add()">Add</button>
-            </form>
-
+                <input type="text" name="task" id="taskEl" /> <br />
+                <button type="button" id="addEl">Add</button>
+            </fieldset>
             <fieldset>
                 <legend>Tarefas:</legend>
-                <ul id="todo">
+                <ul id="todoEl">
                     <li>Limpar casa</li>
                     <li>Outras</li>
                 </ul>

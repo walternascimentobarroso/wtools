@@ -10,22 +10,17 @@
         <menu></menu>
 
         <main>
-            <h1>Calcular ano bissexto</h1>
-            <form name="form_main">
+            <fieldset>
+                <legend>Calcular ano bissexto</legend>
                 <label for="date">Data:</label>
-                <input name="date" id="date" size="20" type="date" /><br />
+                <input name="date" id="dateEl" type="date" /><br />
                 <label for="type">Tipo:</label>
-                <span id="type"></span><br />
+                <span id="typeEl"></span><br />
                 <label for="day">Dia da Semana:</label>
-                <span id="day"></span><br />
+                <output id="dayEl"></output><br />
 
-                <input
-                    name="button"
-                    value="Gerar"
-                    onclick="calcularBissexto()"
-                    type="button"
-                />
-            </form>
+                <button id="generateEl">Gerar</button>
+            </fieldset>
         </main>
 
         <footer></footer>

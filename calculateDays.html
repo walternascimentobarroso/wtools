@@ -10,19 +10,19 @@
         <menu></menu>
 
         <main>
-            <h1>Calcular dias</h1>
+            <fieldset>
+                <legend>Calcular dias</legend>
 
-            <form name="form_main">
-                <label for="date_ini">Date Inicial: </label>
-                <input name="date_ini" id="date_ini" type="date" /> <br />
-                <label for="date_end">Date Final: </label>
-                <input name="date_end" id="date_end" type="date" /> <br />
+                <label for="dateIniEl">Date Inicial: </label>
+                <input name="dateIniEl" id="dateIniEl" type="date" /> <br />
+                <label for="dateEndEl">Date Final: </label>
+                <input name="dateEndEl" id="dateEndEl" type="date" /> <br />
 
-                <label for="days">Dias passados: </label>
-                <span id="days"></span> <br />
+                <label for="daysEl">Dias passados: </label>
+                <span id="daysEl"></span> <br />
 
-                <button type="button" onclick="countDays()">Contar</button>
-            </form>
+                <button type="button" id="countEl">Contar</button>
+            </fieldset>
         </main>
 
         <footer></footer>

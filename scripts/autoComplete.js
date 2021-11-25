@@ -1,7 +1,5 @@
 (function () {
     'use strict';
-    const inputEl = document.querySelector('#input');
-    const suggestionsEl = document.querySelector('#suggestions');
     const destination = ['Italy', 'Spain', 'Portugal', 'Brazil'];
 
     inputEl.addEventListener('input', changeAutoComplete);

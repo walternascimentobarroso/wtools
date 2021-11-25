@@ -1,11 +1,4 @@
-const qrcodeEl = document.querySelector('#qrcode');
-const textEl = document.querySelector('#text');
-const generateEl = document.querySelector('#generate');
-const widthEl = document.querySelector('#width');
-const heightEl = document.querySelector('#height');
-const darkEl = document.querySelector('#dark');
-const lightEl = document.querySelector('#light');
-const downloadEl = document.querySelector('#download');
+'use strict';
 
 generateEl.addEventListener('click', generate);
 
@@ -24,7 +17,7 @@ function generate() {
 
 function download() {
     const canvasEl = qrcodeEl.querySelector('canvas');
-    let data = canvasEl.toDataURL('image/png');
+    const data = canvasEl.toDataURL('image/png');
 
     downloadEl.setAttribute('href', data);
     downloadEl.setAttribute('download', 'qrcode.png');

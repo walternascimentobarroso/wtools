@@ -1,11 +1,8 @@
-const inputEl = document.querySelector('input');
-const textareaEl = document.querySelector('textarea');
-const buttonEl = document.querySelector('button');
-const preview = document.querySelector('img');
+'use strict';
 
-inputEl.addEventListener('change', previewFile);
+fileEl.addEventListener('change', previewFile);
 textareaEl.addEventListener('input', previewText);
-buttonEl.addEventListener('click', downloadFile);
+downloadEl.addEventListener('click', downloadFile);
 
 function previewFile(event) {
     let reader = new FileReader();
@@ -13,20 +10,20 @@ function previewFile(event) {
 
     reader.readAsDataURL(file);
     reader.onloadend = () => {
-        preview.src = reader.result;
+        previewEl.src = reader.result;
         textareaEl.value = reader.result;
     };
 }
 
 function previewText(event) {
     let file = event.target.value.replace(/^data:image\/[a-z]+;base64,/, '');
-    preview.src = `data:image/png;base64,${file}`;
+    previewEl.src = `data:image/png;base64,${file}`;
 }
 
 function downloadFile() {
     let nameFile = 'Image.png';
     let a = document.createElement('a');
-    a.href = preview.src;
+    a.href = previewEl.src;
     a.download = nameFile;
     a.click();
 }

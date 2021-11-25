@@ -11,27 +11,17 @@
 
         <main>
             <h1>Contador de caracteres</h1>
-
-            <form name="form_main">
-                <fieldset>
-                    <legend>Contador</legend>
-                    <label for="text">Texto:</label> <br />
-                    <textarea
-                        name="text"
-                        id="text"
-                        cols="30"
-                        rows="10"
-                        oninput="countText()"
-                    ></textarea
-                    ><br />
-                    <label for="characters">Caracteres: </label
-                    ><span id="characters"></span><br />
-                    <label for="words">Palavras: </label><span id="words"></span
-                    ><br />
-                    <label for="rows">Linhas: </label><span id="rows"></span
-                    ><br />
-                </fieldset>
-            </form>
+            <fieldset>
+                <legend>Counter</legend>
+                <label for="textEl">Texto:</label> <br />
+                <textarea id="textEl"></textarea><br />
+                <label for="charactersEl">Caracteres: </label>
+                <span id="charactersEl"></span><br />
+                <label for="wordsEl">Palavras: </label>
+                <span id="wordsEl"></span><br />
+                <label for="rowsEl">Linhas: </label>
+                <span id="rowsEl"></span><br />
+            </fieldset>
         </main>
 
         <footer></footer>

@@ -10,15 +10,19 @@
         <menu></menu>
 
         <main>
-            <h1>Gerar QRcode</h1>
-            <input type="text" id="text" />
-            <input type="text" id="width" value="256" />
-            <input type="text" id="height" value="256" />
-            <input type="color" id="dark" value="#000000" />
-            <input type="color" id="light" value="#ffffff" />
-            <button id="generate">Gerar</button>
-            <a id="download" style="display: none">Download</a>
-            <div id="qrcode"></div>
+            <fieldset>
+                <legend>Gerar QRcode</legend>
+
+                <input type="text" id="textEl" />
+                <input type="text" id="widthEl" value="256" />
+                <input type="text" id="heightEl" value="256" />
+                <input type="color" id="darkEl" value="#000000" />
+                <input type="color" id="lightEl" value="#ffffff" />
+                <button id="generateEl">Gerar</button>
+                <a id="downloadEl" style="display: none">Download</a>
+                <br />
+                <output id="qrcodeEl"></output>
+            </fieldset>
         </main>
 
         <footer></footer>

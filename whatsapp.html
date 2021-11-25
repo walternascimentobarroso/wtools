@@ -10,15 +10,16 @@
         <menu></menu>
 
         <main>
-            <h1>Gerador de link pro whatsapp</h1>
-            <form name="form_main">
+            <fieldset>
+                <legend>Gerador de link pro whatsapp</legend>
+
                 <label for="number">Número: </label>
-                <input type="text" name="number" id="number" /> <br />
+                <input type="text" name="number" id="numberEl" /> <br />
                 <label for="message">Mensagem: </label>
-                <input type="text" name="message" id="message" /> <br />
-                <p id="end_url"></p>
-                <button type="button" onclick="generateLink()">Gerar</button>
-            </form>
+                <input type="text" name="message" id="messageEl" /> <br />
+                <output id="outputEl"></output> <br />
+                <button type="button" id="generateEl">Gerar</button>
+            </fieldset>
         </main>
 
         <footer></footer>

@@ -1,10 +1,5 @@
 'use strict';
 
-const hourEl = document.querySelector('#hour');
-const minuteEl = document.querySelector('#minute');
-const secondEl = document.querySelector('#second');
-const millisecondEl = document.querySelector('#millisecond');
-
 let hour = 0;
 let minute = 0;
 let second = 0;
@@ -12,19 +7,11 @@ let millisecond = 0;
 
 let cron;
 
-document.form_main.start.onclick = () => start();
-document.form_main.pause.onclick = () => pause();
-document.form_main.reset.onclick = () => reset();
+const pause = () => clearInterval(cron);
 
 function start() {
     pause();
-    cron = setInterval(() => {
-        timer();
-    }, 10);
-}
-
-function pause() {
-    clearInterval(cron);
+    cron = setInterval(() => timer(), 10);
 }
 
 function reset() {
@@ -57,6 +44,8 @@ function timer() {
     millisecondEl.innerText = returnData(millisecond);
 }
 
-function returnData(input) {
-    return input > 10 ? input : `0${input}`;
-}
+const returnData = (input) => (input > 10 ? input : `0${input}`);
+
+startEl.addEventListener('click', start);
+pauseEl.addEventListener('click', pause);
+resetEl.addEventListener('click', reset);

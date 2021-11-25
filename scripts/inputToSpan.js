@@ -1,14 +1,10 @@
-const elementEl = document.querySelector('#element');
+'use strict';
 
-function spanSwitch(e) {
-    let txt = e.innerText;
-
+function spanSwitch({ innerText: txt }) {
     elementEl.innerHTML = `<input onblur='spanReset(this)' value='${txt}' />`;
     document.getElementsByTagName('input')[0].focus();
 }
 
-function spanReset(e) {
-    let txt = e.value;
-
-    elementEl.innerHTML = `<span onclick='spanSwitch(this)'> ${txt} </span>`;
+function spanReset({ value }) {
+    elementEl.innerHTML = `<span onclick='spanSwitch(this)'> ${value} </span>`;
 }

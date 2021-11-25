@@ -1,6 +1,4 @@
-const execCopyEl = document.querySelector('#execCopy');
-const clipboardCopyEl = document.querySelector('#clipboardCopy');
-const inputEl = document.querySelector('#input');
+'use strict';
 
 // Type 1
 function execCopy() {
@@ -9,10 +7,7 @@ function execCopy() {
 }
 
 // Type 2
-async function clipboardCopy() {
-    let text = inputEl.value;
-    await navigator.clipboard.writeText(text);
-}
+const copy = async () => await navigator.clipboard.writeText(inputEl.value);
 
 execCopyEl.addEventListener('click', execCopy);
-clipboardCopyEl.addEventListener('click', clipboardCopy);
+clipboardCopyEl.addEventListener('click', copy);
