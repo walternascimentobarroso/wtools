@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <fieldset>
+                <legend>Gerar QRcode</legend>
+
+                <input type="text" id="textEl" />
+                <input type="text" id="widthEl" value="256" />
+                <input type="text" id="heightEl" value="256" />
+                <input type="color" id="darkEl" value="#000000" />
+                <input type="color" id="lightEl" value="#ffffff" />
+                <button id="generateEl">Gerar</button>
+                <a id="downloadEl" style="display: none">Download</a>
+                <br />
+                <output id="qrcodeEl"></output>
+            </fieldset>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
+        <script src="scripts/generatorQRCode.js"></script>
+    </body>
+</html>

@@ -1,15 +1,17 @@
 'use strict';
-const input = document.querySelector('input');
-const button = document.querySelector('#togglePass');
 
-button.addEventListener('click', togglePass);
+toggleEl.addEventListener('click', togglePass);
 
 function togglePass() {
-    if (input.type == 'password') {
-        input.type = 'text';
-        button.textContent = '🤩';
-    } else {
-        input.type = 'password';
-        button.textContent = '😣';
-    }
+    return passwordEl.type == 'password' ? showPassword() : hidePassword();
+}
+
+function showPassword() {
+    passwordEl.type = 'text';
+    toggleEl.textContent = '🤩';
+}
+
+function hidePassword() {
+    passwordEl.type = 'password';
+    toggleEl.textContent = '😣';
 }

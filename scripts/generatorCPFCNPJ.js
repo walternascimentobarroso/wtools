@@ -1,8 +1,10 @@
-let create_array = (total, numero) =>
-    Array.from(Array(total), () => number_random(numero));
-let number_random = (number) => Math.round(Math.random() * number);
-let mod = (dividendo, divisor) =>
-    Math.round(dividendo - Math.floor(dividendo / divisor) * divisor);
+'use strict';
+
+const createArray = (total, n) =>
+    Array.from(Array(total), () => numberRandom(n));
+const numberRandom = (n) => Math.round(Math.random() * n);
+const mod = (dividend, divisor) =>
+    Math.round(dividend - Math.floor(dividend / divisor) * divisor);
 
 function gera() {
     document.form_main.numero.value = document.form_main.tipo[0].checked
@@ -13,7 +15,7 @@ function gera() {
 function cpf() {
     let total_array = 9;
     let n = 9;
-    let [n1, n2, n3, n4, n5, n6, n7, n8, n9] = create_array(total_array, n);
+    let [n1, n2, n3, n4, n5, n6, n7, n8, n9] = createArray(total_array, n);
 
     let d1 =
         n9 * 2 +
@@ -44,13 +46,13 @@ function cpf() {
 
     if (document.form_main.mascara.checked)
         return `${n1}${n2}${n3}.${n4}${n5}${n6}.${n7}${n8}${n9}-${d1}${d2}`;
-    else return `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${d1}${d2}`;
+    return `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${d1}${d2}`;
 }
 
 function cnpj() {
     let total_array = 8;
     let n = 9;
-    let [n1, n2, n3, n4, n5, n6, n7, n8] = create_array(total_array, n);
+    let [n1, n2, n3, n4, n5, n6, n7, n8] = createArray(total_array, n);
     let n9 = 0;
     let n10 = 0;
     let n11 = 0;
@@ -91,6 +93,5 @@ function cnpj() {
 
     if (document.form_main.mascara.checked)
         return `${n1}${n2}.${n3}${n4}${n5}.${n6}${n7}${n8}/${n9}${n10}${n11}${n12}-${d1}${d2}`;
-    else
-        return `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${n10}${n11}${n12}${d1}${d2}`;
+    return `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${n10}${n11}${n12}${d1}${d2}`;
 }

@@ -1,9 +1,12 @@
-const outputEl = document.getElementById('end_url');
+'use strict';
+
 const URL = 'https://wa.me/';
 
+generateEl.addEventListener('click', generateLink);
+
 function generateLink() {
-    let number = document.form_main.number.value;
-    let message = document.form_main.message.value;
-    let end_url = `${URL}${number}?text=${message}`;
+    const number = numberEl.value;
+    const message = messageEl.value;
+    const end_url = `${URL}${number}?text=${message}`;
     outputEl.innerText = end_url;
 }

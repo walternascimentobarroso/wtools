@@ -1,12 +1,11 @@
-const daysEl = document.querySelector('#days');
-const hoursEl = document.querySelector('#hours');
-const minutesEl = document.querySelector('#minutes');
-const secondsEl = document.querySelector('#seconds');
+'use strict';
 
 const second = 1000;
 const minute = second * 60;
 const hour = minute * 60;
 const day = hour * 24;
+
+dateEl.addEventListener('blur', resetCountdown);
 
 let count_down = theBigDay();
 let x = setInterval(() => countDown(), second);
@@ -30,7 +29,6 @@ function countDown() {
 
 function resetCountdown() {
     clearInterval(x);
-    let date_end = document.form_main.date_end.value;
-    count_down = new Date(`${date_end} 00:00:00`).getTime();
+    count_down = new Date(`${dateEl.value} 00:00:00`).getTime();
     x = setInterval(() => countDown(), second);
 }

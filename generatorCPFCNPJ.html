@@ -10,35 +10,42 @@
         <menu></menu>
 
         <main>
-            <h1>Gerador de CPF E CNPJ válidos</h1>
-            <form name="form_main">
-                <label for="numero">Número:</label>
-                <input name="numero" id="numero" size="20" type="text" /><br />
-                Tipo:
-                <input
-                    name="tipo"
-                    value="cpf"
-                    id="cpf"
-                    checked="checked"
-                    type="radio"
-                />
-                <label for="cpf">CPF</label>
-                <input name="tipo" value="cnpj" id="cnpj" type="radio" />
-                <label for="cnpj">CNPJ</label>
-                <input
-                    name="mascara"
-                    value="mascara"
-                    id="mascara"
-                    type="checkbox"
-                />
-                <label for="mascara">Máscara</label><br /><br />
-                <input
-                    name="button"
-                    value="Gerar"
-                    onclick="gera()"
-                    type="button"
-                />
-            </form>
+            <fieldset>
+                <legend>Gerador de CPF E CNPJ válidos</legend>
+                <form name="form_main">
+                    <label for="numero">Número:</label>
+                    <input
+                        name="numero"
+                        id="numero"
+                        size="20"
+                        type="text"
+                    /><br />
+                    Tipo:
+                    <input
+                        name="tipo"
+                        value="cpf"
+                        id="cpf"
+                        checked="checked"
+                        type="radio"
+                    />
+                    <label for="cpf">CPF</label>
+                    <input name="tipo" value="cnpj" id="cnpj" type="radio" />
+                    <label for="cnpj">CNPJ</label>
+                    <input
+                        name="mascara"
+                        value="mascara"
+                        id="mascara"
+                        type="checkbox"
+                    />
+                    <label for="mascara">Máscara</label><br /><br />
+                    <input
+                        name="button"
+                        value="Gerar"
+                        onclick="gera()"
+                        type="button"
+                    />
+                </form>
+            </fieldset>
         </main>
 
         <footer></footer>

@@ -1,5 +1,6 @@
-const typeEl = document.querySelector('#type');
-const dayEl = document.querySelector('#day');
+'use strict';
+
+generateEl.addEventListener('click', calcularBissexto);
 
 const day_array = [
     'Segunda-Feira',
@@ -17,7 +18,7 @@ const calcular_bissexto = (ano) =>
         : 'Não é bissexto';
 
 function calcularBissexto() {
-    let date_full = new Date(document.form_main.date.value);
+    let date_full = new Date(dateEl.value);
     let date_year = date_full.getFullYear();
 
     typeEl.innerText = calcular_bissexto(date_year);

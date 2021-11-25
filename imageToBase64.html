@@ -10,14 +10,17 @@
         <menu></menu>
 
         <main>
-            <label for="file">Clique aqui para carregar imagem</label>
-            <input type="file" id="file" hidden /><br />
+            <fieldset>
+                <legend>Image To Base64</legend>
+                <label for="fileEl">Clique aqui para carregar imagem</label>
+                <input type="file" id="fileEl" hidden /><br />
 
-            <textarea></textarea>
+                <textarea id="textareaEl"></textarea>
 
-            <img width="100" alt="Prévia da imagem..." />
+                <img width="100" alt="Prévia da imagem..." id="previewEl" />
 
-            <button type="button">Download</button>
+                <button type="button" id="downloadEl">Download</button>
+            </fieldset>
         </main>
 
         <footer></footer>

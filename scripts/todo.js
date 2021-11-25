@@ -1,5 +1,6 @@
-const liEl = document.querySelectorAll('#todo li');
-const todoEl = document.querySelector('#todo');
+'use strict';
+
+const liEl = document.querySelectorAll('#todoEl li');
 
 function createCloseButton(li) {
     let span = document.createElement('SPAN');
@@ -22,15 +23,15 @@ function checked({ target }) {
 
 function add() {
     let li = document.createElement('LI');
-    let input_value = document.form_main.task.value;
-    let input_text = document.createTextNode(input_value);
+    let input_text = document.createTextNode(taskEl.value);
 
     li.appendChild(input_text);
     todoEl.appendChild(li);
-    document.form_main.task.value = '';
+    taskEl.value = '';
 
     createCloseButton(li);
 }
 
 liEl.forEach(createCloseButton);
 todoEl.addEventListener('click', checked);
+addEl.addEventListener('click', add);

@@ -1,3 +1,5 @@
+'use strict';
+
 const menuEl = document.querySelector('menu');
 
 const menu = [

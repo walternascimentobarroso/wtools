@@ -1,32 +1,35 @@
+'use strict';
+
 const mainEl = document.querySelector('main');
 
 const cards = [
     { url: '/whatsapp.html', description: 'Whatsapp' },
+    { url: '/validatorPassword.html', description: 'Validator Password' },
+    { url: '/transformingLetters.html', description: 'Transforming Letters' },
+    { url: '/todo.html', description: 'TODO' },
+    { url: '/temperatureAPI.html', description: 'Temperature API' },
+    { url: '/stopwatch.html', description: 'Stopwatch' },
+    { url: '/showPassword.html', description: 'Show Password' },
+    { url: '/numberGenerator.html', description: 'Number Generator' },
+    { url: '/inputToSpan.html', description: 'Input to Span' },
+    { url: '/imageToBase64.html', description: 'Image To Base64' },
+    { url: '/generatorQRCode.html', description: 'Generator QRCode' },
+    { url: '/generatorCPFCNPJ.html', description: 'CPF and CNPJ Generator' },
+    { url: '/currencyQuote.html', description: 'Currency Quote ' },
+    { url: '/countdown.html', description: 'Countdown' },
+    { url: '/copy.html', description: 'Copy' },
     { url: '/characterCounter.html', description: 'Character Counter' },
+    { url: '/calculatingLeapYear.html', description: 'Calculate Leap Year' },
     { url: '/calculateTimeStamp.html', description: 'Calculate TimeStamp' },
     { url: '/calculateDays.html', description: 'Calculate Days' },
-    { url: '/calculatingLeapYear.html', description: 'Calculate Leap Year' },
-    { url: '/todo.html', description: 'TODO' },
-    { url: '/countdown.html', description: 'Countdown' },
-    { url: '/transformingLetters.html', description: 'Transforming Letters' },
-    { url: '/copy.html', description: 'Copy' },
-    { url: '/stopwatch.html', description: 'Stopwatch' },
-    { url: '/currencyQuote.html', description: 'Currency Quote ' },
-    { url: '/generatorCPFCNPJ.html', description: 'CPF and CNPJ Generator' },
-    { url: '/imageToBase64.html', description: 'Image To Base64' },
-    { url: '/showPassword.html', description: 'Show Password' },
-    { url: '/inputToSpan.html', description: 'Input to Span' },
-    { url: '/numberGenerator.html', description: 'Number Generator' },
-    { url: '/validatorPassword.html', description: 'Validator Password' },
     { url: '/autoComplete.html', description: 'Auto Complete' },
-    { url: '/temperatureAPI.html', description: 'Temperature API' },
 ];
 
 function loadCard() {
     let div = document.createElement('div');
     div.style.display = 'flex';
     div.style.flexWrap = 'wrap';
-    cards.forEach((el) => {
+    cards.reverse().forEach((el) => {
         let card = document.createElement('a');
         card.style.display = 'flex';
         card.style.justifyContent = 'center';

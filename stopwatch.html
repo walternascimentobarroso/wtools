@@ -10,20 +10,20 @@
         <menu></menu>
 
         <main>
-            <form name="form_main">
+            <fieldset>
+                <legend>StopWatch</legend>
                 <div>
-                    <span id="hour">00</span>:<span id="minute">00</span>:<span
-                        id="second"
-                        >00</span
-                    >:<span id="millisecond">000</span>
+                    <!--
+                    --><output id="hourEl">00</output>:<!--
+                    --><output id="minuteEl">00</output>:<!--
+                    --><output id="secondEl">00</output>:<!--
+                    --><output id="millisecondEl">000</output>
                 </div>
 
-                <br />
-
-                <button type="button" name="start">start</button>
-                <button type="button" name="pause">pause</button>
-                <button type="button" name="reset">reset</button>
-            </form>
+                <button type="button" name="start" id="startEl">start</button>
+                <button type="button" name="pause" id="pauseEl">pause</button>
+                <button type="button" name="reset" id="resetEl">reset</button>
+            </fieldset>
         </main>
 
         <footer></footer>
