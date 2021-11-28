@@ -23,6 +23,8 @@ const cards = [
     { url: '/calculateTimeStamp.html', description: 'Calculate TimeStamp' },
     { url: '/calculateDays.html', description: 'Calculate Days' },
     { url: '/autoComplete.html', description: 'Auto Complete' },
+    { url: '/notificationAndAudio.html', description: 'Notification/Audio' },
+    { url: '/URLDecoderAnsEncoder.html', description: 'URL Decoder/Encoder' },
 ];
 
 function loadCard() {
