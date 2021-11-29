@@ -1,14 +1,7 @@
-const data = document.querySelector('#data');
-const encode = document.querySelector('#encode');
-const decode = document.querySelector('#decode');
+'use strict';
 
-encode.addEventListener('click', encodeURL);
-decode.addEventListener('click', decodeURL);
+const encodeURL = () => (dataEl.value = encodeURIComponent(dataEl.value));
+const decodeURL = () => (dataEl.value = decodeURIComponent(dataEl.value));
 
-function encodeURL() {
-    data.value = encodeURIComponent(data.value);
-}
-
-function decodeURL() {
-    data.value = decodeURIComponent(data.value);
-}
+encodeEl.addEventListener('click', encodeURL);
+decodeEl.addEventListener('click', decodeURL);

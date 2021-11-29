@@ -1,4 +1,4 @@
-const buttonEl = document.querySelector('button');
+'use strict';
 
 const title = 'Success';
 const msg = 'Message';
