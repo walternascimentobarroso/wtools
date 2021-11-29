@@ -15,7 +15,7 @@ const cards = [
     { url: '/imageToBase64.html', description: 'Image To Base64' },
     { url: '/generatorQRCode.html', description: 'Generator QRCode' },
     { url: '/generatorCPFCNPJ.html', description: 'CPF and CNPJ Generator' },
-    { url: '/currencyQuote.html', description: 'Currency Quote ' },
+    { url: '/currencyQuote.html', description: 'Currency Quote' },
     { url: '/countdown.html', description: 'Countdown' },
     { url: '/copy.html', description: 'Copy' },
     { url: '/characterCounter.html', description: 'Character Counter' },
@@ -23,6 +23,8 @@ const cards = [
     { url: '/calculateTimeStamp.html', description: 'Calculate TimeStamp' },
     { url: '/calculateDays.html', description: 'Calculate Days' },
     { url: '/autoComplete.html', description: 'Auto Complete' },
+    { url: '/notificationAndAudio.html', description: 'Notification/Audio' },
+    { url: '/URLDecoderAndEncoder.html', description: 'URL Decoder/Encoder' },
 ];
 
 function loadCard() {
