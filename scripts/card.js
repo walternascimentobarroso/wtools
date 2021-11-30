@@ -25,6 +25,7 @@ const cards = [
     { url: '/autoComplete.html', description: 'Auto Complete' },
     { url: '/notificationAndAudio.html', description: 'Notification/Audio' },
     { url: '/URLDecoderAndEncoder.html', description: 'URL Decoder/Encoder' },
+    { url: '/sortition.html', description: 'Sortition' },
 ];
 
 function loadCard() {

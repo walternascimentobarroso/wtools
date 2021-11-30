@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+        <style>
+            .card {
+                width: 250px;
+                height: 250px;
+                transform-style: preserve-3d;
+            }
+
+            .card-active {
+                animation: rotation 0.3s infinite linear;
+            }
+
+            @keyframes rotation {
+                100% {
+                    transform: rotatey(360deg);
+                }
+            }
+
+            .front,
+            .back {
+                position: absolute;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            .back,
+            .back-active {
+                transform: rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <fieldset>
+                <legend>Cara ou Coroa</legend>
+                <div id="cardEl" class="card">
+                    <div class="front">
+                        <img src="https://placekitten.com/250/250" alt="head" />
+                    </div>
+                    <div class="back">
+                        <img
+                            src="https://placekitten.com/g/250/250"
+                            alt="tail"
+                        />
+                    </div>
+                </div>
+                <div id="resultEl" style="display: none">
+                    <div>O resultado foi: <strong id="outputEl"></strong></div>
+                    <div>
+                        Sorteio realizado em: <strong id="dateEl"></strong> às
+                        <strong id="timeEl"></strong>
+                    </div>
+                </div>
+            </fieldset>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/headsOrTails.js"></script>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 {
     "extends": ["plugin:prettier/recommended"],
     "parserOptions": {
-        "ecmaVersion": 6
+        "ecmaVersion": 8
     },
     "plugins": ["prettier"],
     "rules": {
