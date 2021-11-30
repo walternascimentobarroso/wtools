@@ -44,7 +44,7 @@ function timer() {
     millisecondEl.innerText = returnData(millisecond);
 }
 
-const returnData = (input) => (input > 10 ? input : `0${input}`);
+const returnData = (input) => (input > 9 ? input : `0${input}`);
 
 startEl.addEventListener('click', start);
 pauseEl.addEventListener('click', pause);
