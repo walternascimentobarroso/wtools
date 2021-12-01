@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <fieldset>
+                <legend>Resultado</legend>
+                <div>
+                    <label for="inputIniEl">
+                        Informe os itens a serem embaralhados, separados por
+                        <strong>quebra de linha</strong> ou
+                        <strong>ponto e vírgula</strong>.
+                    </label>
+                    <br />
+                    <textarea
+                        name="inputIniEl"
+                        id="inputIniEl"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </div>
+                <span>Ou informe o arquivo <strong>.txt</strong></span>
+                <div>
+                    <input type="file" id="fileEl" />
+                </div>
+                <div>
+                    Exibir apenas os primeiros
+                    <input type="number" id="inputEl" /> itens embaralhados.
+                </div>
+                <button id="playEl">Sorteio</button>
+            </fieldset>
+
+            <fieldset id="resultEl" style="display: none">
+                <legend>Resultado</legend>
+                <table>
+                    <thead>
+                        <th>Ordem</th>
+                        <th>Nome</th>
+                    </thead>
+                    <tbody id="outputEl"></tbody>
+                </table>
+                <div>
+                    Sorteio realizado em: <strong id="dateEl"></strong> às
+                    <strong id="timeEl"></strong>
+                </div>
+            </fieldset>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/sortitionNames.js"></script>
+    </body>
+</html>
