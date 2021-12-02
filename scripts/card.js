@@ -27,6 +27,8 @@ const cards = [
     { url: '/URLDecoderAndEncoder.html', description: 'URL Decoder/Encoder' },
     { url: '/sortition.html', description: 'Sortition' },
     { url: '/sortitionNames.html', description: 'Sortition Names' },
+    { url: '/headsOrTails.html', description: 'Heads Or Tails' },
+    { url: '/typeWriter.html', description: 'TypeWriter' },
 ];
 
 function loadCard() {
