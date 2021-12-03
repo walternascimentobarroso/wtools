@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+        <style>
+            /* scrolltable rules */
+            table {
+                margin-top: 20px;
+                display: inline-block;
+                overflow: auto;
+            }
+
+            thead {
+                margin-top: -20px;
+                position: absolute;
+            }
+
+            /* table height */
+            table {
+                width: 50%;
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <h1>Tabela ASCII</h1>
+
+            <p>
+                A seguir é apresentada a tabela ASCII padrão (código 0 a 127),
+                que você encontra na maioria dos computadores.
+            </p>
+
+            <div>Tabela ASCII: Códigos de Controle (0..31):</div>
+            <div>Tabela ASCII: Caracteres-padrão (32..127):</div>
+            <table style="height: 150px">
+                <thead>
+                    <th>COD</th>
+                    <th>Caracter</th>
+                </thead>
+                <tbody id="outputEl"></tbody>
+            </table>
+            <div>Tabela ASCII: Caracteres Estendidos (128..255):</div>
+
+            <details>
+                <summary>O que é a Tabela ASCII</summary>
+
+                A tabela ASCII, acrônimo de "American Standard Code for
+                Information Interchange" (Código Americano Padrão para o
+                Intercambio de Informações), é um conjunto de valores que
+                representam caracteres e códigos de controle armazenados ou
+                utilizados em computadores. Nesta tabela, cada caractere (letra
+                ou número) possui um código correspondente. Cada código ocupa 1
+                byte (tipo char), o que nos dá 255 posições. Destas 255
+                posições, as primeiras 32 (0 a 31) correspondem a códigos de
+                controle que são utilizados para controlar dispositivos (tais
+                como monitores e impressoras). Logo, a maioria destes códigos
+                não produz caracteres quando impressos em algum dispositivo
+                (como a tela do computador). Nas primeiras posições são
+                encontrados caracteres de controle. Da posição 32 até a 127
+                estão alocados os caracteres do conjunto padrão, correspondendo
+                a caracteres do alfabeto latino (sem acentos, maiúsculos e
+                minúsculos), dígitos (0 a 9) e alguns outros símbolos comuns. Os
+                demais códigos (128 a 255) formam o conjunto estendido, e podem
+                variar de região para região. Os últimos códigos, os caracteres
+                estendidos (127..255), não são padrão e podem variar dependendo
+                da configuração do seu computador, principalmente se você não
+                estiver trabalhando com o MSDOS configurado para o idioma
+                português ou estiver utilizando outro sistema operacional.
+                Nestes casos, procure informar-se sobre o padrão UNICODE,
+                utilizado por sistemas como o Windows, ou utilize o
+                código-exemplo seguinte (após a tabela) que imprime a tabela
+                ASCII na tela do seu computador.
+            </details>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/tableASCII.js"></script>
+    </body>
+</html>
