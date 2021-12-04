@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <form action="">
+                <fieldset>
+                    <legend>Hora 1</legend>
+                    <label for="initHour">Hora(s): </label>
+                    <input
+                        type="number"
+                        name="initHour"
+                        id="initHour"
+                        value="0"
+                    />
+
+                    <label for="initMin">Minuto(s): </label>
+                    <input
+                        type="number"
+                        name="initMin"
+                        id="initMin"
+                        value="0"
+                    />
+
+                    <label for="initSec">Segundo(s): </label>
+                    <input
+                        type="number"
+                        name="initSec"
+                        id="initSec"
+                        value="0"
+                    />
+                </fieldset>
+                <fieldset>
+                    <legend>Hora 2</legend>
+                    <label for="endHour">Hora(s): </label>
+                    <input
+                        type="number"
+                        name="endHour"
+                        id="endHour"
+                        value="0"
+                    />
+
+                    <label for="endMin">Minuto(s): </label>
+                    <input type="number" name="endMin" id="endMin" value="0" />
+
+                    <label for="endSec">Segundo(s): </label>
+                    <input type="number" name="endSec" id="endSec" value="0" />
+                </fieldset>
+                <button type="button" id="sum">Somar</button>
+                <button type="button" id="subtract">Subtrair</button>
+                <button type="reset">Resetar</button>
+            </form>
+            <hr />
+            <fieldset>
+                <legend>Resultado</legend>
+                <label for="outHour">Hora(s): </label>
+                <input type="text" name="outHour" id="outHour" />
+
+                <label for="outMin">Minuto(s): </label>
+                <input type="text" name="outMin" id="outMin" />
+
+                <label for="outSec">Segundo(s): </label>
+                <input type="text" name="outSec" id="outSec" />
+
+                <hr />
+
+                <label for="fullOut">Horario Completo: </label>
+                <span id="fullOut"></span>
+            </fieldset>
+
+            <br />
+
+            <details>
+                <summary>Instruções</summary>
+                Como utilizar? Basta usar o mouse e o teclado. Insira as
+                informações necessárias para calcular. Para a subtração, faz
+                sentido colocar mais tempo na primeira posição. Se o programa
+                detecta um mais pequeno em primeiro, a função SWITCH é utilizado
+                automaticamente (ela inverte as horas para não ter um resultado
+                negativo). Quando esta função estiver ligado um fundo rosa
+                aparece. Para apagar todos os dados, clique no botão RESET.
+                Exemplo para usa-lo Calcule o tempo de trabalho rapidamente Se
+                você trabalha a meio tempo e quer calcular o tempo de trabalho
+                entre 08:43 - 13:09, esta calculadora é para você (use
+                subtração). O intervalo de tempo sera de 04:26.
+            </details>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/calcDuration.js"></script>
+    </body>
+</html>
