@@ -29,6 +29,8 @@ const cards = [
     { url: '/sortitionNames.html', description: 'Sortition Names' },
     { url: '/headsOrTails.html', description: 'Heads Or Tails' },
     { url: '/typeWriter.html', description: 'TypeWriter' },
+    { url: '/tableASCII.html', description: 'Table ASCII' },
+    { url: '/calcDuration.html', description: 'Calc Duration' },
 ];
 
 function loadCard() {
