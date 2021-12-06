@@ -13,66 +13,76 @@
             <form action="">
                 <fieldset>
                     <legend>Hora 1</legend>
-                    <label for="initHour">Hora(s): </label>
+                    <label for="initHourEl">Hora(s): </label>
                     <input
                         type="number"
-                        name="initHour"
-                        id="initHour"
+                        name="initHourEl"
+                        id="initHourEl"
                         value="0"
                     />
 
-                    <label for="initMin">Minuto(s): </label>
+                    <label for="initMinEl">Minuto(s): </label>
                     <input
                         type="number"
-                        name="initMin"
-                        id="initMin"
+                        name="initMinEl"
+                        id="initMinEl"
                         value="0"
                     />
 
-                    <label for="initSec">Segundo(s): </label>
+                    <label for="initSecEl">Segundo(s): </label>
                     <input
                         type="number"
-                        name="initSec"
-                        id="initSec"
+                        name="initSecEl"
+                        id="initSecEl"
                         value="0"
                     />
                 </fieldset>
                 <fieldset>
                     <legend>Hora 2</legend>
-                    <label for="endHour">Hora(s): </label>
+                    <label for="endHourEl">Hora(s): </label>
                     <input
                         type="number"
-                        name="endHour"
-                        id="endHour"
+                        name="endHourEl"
+                        id="endHourEl"
                         value="0"
                     />
 
-                    <label for="endMin">Minuto(s): </label>
-                    <input type="number" name="endMin" id="endMin" value="0" />
+                    <label for="endMinEl">Minuto(s): </label>
+                    <input
+                        type="number"
+                        name="endMinEl"
+                        id="endMinEl"
+                        value="0"
+                    />
 
-                    <label for="endSec">Segundo(s): </label>
-                    <input type="number" name="endSec" id="endSec" value="0" />
+                    <label for="endSecEl">Segundo(s): </label>
+                    <input
+                        type="number"
+                        name="endSecEl"
+                        id="endSecEl"
+                        value="0"
+                    />
                 </fieldset>
-                <button type="button" id="sum">Somar</button>
-                <button type="button" id="subtract">Subtrair</button>
+                <button type="button" id="sumEl">Somar</button>
+                <button type="button" id="subtractEl">Subtrair</button>
                 <button type="reset">Resetar</button>
             </form>
             <hr />
             <fieldset>
                 <legend>Resultado</legend>
-                <label for="outHour">Hora(s): </label>
-                <input type="text" name="outHour" id="outHour" />
+                <label for="outHourEl">Hora(s): </label>
+                <input type="text" name="outHourEl" id="outHourEl" />
 
-                <label for="outMin">Minuto(s): </label>
-                <input type="text" name="outMin" id="outMin" />
+                <label for="outMinEl">Minuto(s): </label>
+                <input type="text" name="outMinEl" id="outMinEl" />
 
-                <label for="outSec">Segundo(s): </label>
-                <input type="text" name="outSec" id="outSec" />
+                <label for="outSecEl">Segundo(s): </label>
+                <input type="text" name="outSecEl" id="outSecEl" />
 
                 <hr />
 
-                <label for="fullOut">Horario Completo: </label>
-                <span id="fullOut"></span>
+                <label for="fullOutEl">Horario Completo: </label>
+                <output id="fullOutEl"></output>
             </fieldset>
 
             <br />

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <fieldset>
+                <legend>ColorPicker</legend>
+                <div>
+                    <label for="colorEl">Color</label>
+                    <input type="color" id="colorEl" name="colorEl" />
+                </div>
+
+                <div>
+                    <label for="hexEl">HEX</label>
+                    <input type="text" id="hexEl" name="hexEl" />
+                </div>
+
+                <div>
+                    <label for="rgbEl">RGB</label>
+                    <input type="text" id="rgbEl" name="rgbEl" />
+                </div>
+
+                <div>
+                    <label for="cmykEl">CMYK</label>
+                    <input type="text" id="cmykEl" name="cmykEl" />
+                </div>
+
+                <div>
+                    <label for="hsvEl">HSV</label>
+                    <input type="text" id="hsvEl" name="hsvEl" />
+                </div>
+
+                <div>
+                    <label for="hslEl">HSL</label>
+                    <input type="text" id="hslEl" name="hslEl" />
+                </div>
+
+                <div>
+                    <label for="previewEl">Previa</label>
+                    <div
+                        id="previewEl"
+                        style="
+                            height: 300px;
+                            width: 300px;
+                            background-color: #000;
+                        "
+                    ></div>
+                </div>
+            </fieldset>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/colorPicker.js"></script>
+    </body>
+</html>
