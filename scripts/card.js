@@ -6,7 +6,6 @@ const cards = [
     { url: '/whatsapp.html', description: 'Whatsapp' },
     { url: '/validatorPassword.html', description: 'Validator Password' },
     { url: '/transformingLetters.html', description: 'Transforming Letters' },
-    { url: '/todo.html', description: 'TODO' },
     { url: '/temperatureAPI.html', description: 'Temperature API' },
     { url: '/stopwatch.html', description: 'Stopwatch' },
     { url: '/showPassword.html', description: 'Show Password' },
@@ -32,6 +31,9 @@ const cards = [
     { url: '/tableASCII.html', description: 'Table ASCII' },
     { url: '/calcDuration.html', description: 'Calc Duration' },
     { url: '/passwordGenerator.html', description: 'Password Generator' },
+    { url: '/todo.html', description: 'TODO' },
+    { url: '/todoLocalStorage.html', description: 'TODO with LocalStorage' },
+    { url: '/quiz.html', description: 'Quiz' },
 ];
 
 function loadCard() {
