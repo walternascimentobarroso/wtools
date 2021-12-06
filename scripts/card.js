@@ -31,6 +31,7 @@ const cards = [
     { url: '/typeWriter.html', description: 'TypeWriter' },
     { url: '/tableASCII.html', description: 'Table ASCII' },
     { url: '/calcDuration.html', description: 'Calc Duration' },
+    { url: '/passwordGenerator.html', description: 'Password Generator' },
 ];
 
 function loadCard() {
