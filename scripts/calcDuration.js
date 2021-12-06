@@ -1,38 +1,21 @@
 'use strict';
 
-let initHour = document.querySelector('#initHour');
-let initMin = document.querySelector('#initMin');
-let initSec = document.querySelector('#initSec');
-
-let endHour = document.querySelector('#endHour');
-let endMin = document.querySelector('#endMin');
-let endSec = document.querySelector('#endSec');
-
-let outHour = document.querySelector('#outHour');
-let outMin = document.querySelector('#outMin');
-let outSec = document.querySelector('#outSec');
-
-let fullOut = document.querySelector('#fullOut');
-
-document.querySelector('#sum').addEventListener('click', sum);
-document.querySelector('#subtract').addEventListener('click', subtract);
-
 function inverter() {
-    let tempHour = initHour.value;
-    let tempMin = initMin.value;
-    let tempSec = initSec.value;
+    let tempHour = initHourEl.value;
+    let tempMin = initMinEl.value;
+    let tempSec = initSecEl.value;
 
-    initHour.value = endHour.value;
-    initMin.value = endMin.value;
-    initSec.value = endSec.value;
+    initHourEl.value = endHourEl.value;
+    initMinEl.value = endMinEl.value;
+    initSecEl.value = endSecEl.value;
 
-    endHour.value = tempHour;
-    endMin.value = tempMin;
-    endSec.value = tempSec;
+    endHourEl.value = tempHour;
+    endMinEl.value = tempMin;
+    endSecEl.value = tempSec;
 }
 
 function subtract() {
-    if (Number(initHour.value) < Number(endHour.value)) {
+    if (Number(initHourEl.value) < Number(endHourEl.value)) {
         inverter();
     }
     let time = {};
@@ -40,15 +23,15 @@ function subtract() {
     let minute = 0;
     let second = 0;
 
-    time = verifyValue(Number(initSec.value), Number(endSec.value));
+    time = verifyValue(Number(initSecEl.value), Number(endSecEl.value));
     second = time.valueOne;
     minute = time.valueTwo;
 
-    time = verifyValue(Number(initMin.value), Number(endMin.value));
+    time = verifyValue(Number(initMinEl.value), Number(endMinEl.value));
     minute += time.valueOne;
     hour = time.valueTwo;
 
-    hour += Math.abs(Number(initHour.value) - Number(endHour.value));
+    hour += Math.abs(Number(initHourEl.value) - Number(endHourEl.value));
     out(hour, minute, second);
 }
 
@@ -58,20 +41,20 @@ function verifyValue(initValue, endValue) {
     if (initValue < endValue) {
         valueOne += initValue + 60 - endValue;
         valueTwo--;
-    } else {
-        valueOne = Math.abs(initValue - endValue);
+        return { valueOne, valueTwo };
     }
+    valueOne = Math.abs(initValue - endValue);
     return { valueOne, valueTwo };
 }
 
 function sum() {
-    let hour = Number(initHour.value) + Number(endHour.value);
-    let minute = Number(initMin.value) + Number(endMin.value);
+    let hour = Number(initHourEl.value) + Number(endHourEl.value);
+    let minute = Number(initMinEl.value) + Number(endMinEl.value);
+    let second = Number(initSecEl.value) + Number(endSecEl.value);
     if (minute >= 60) {
         hour++;
         minute -= 60;
     }
-    let second = Number(initSec.value) + Number(endSec.value);
     if (second >= 60) {
         minute++;
         second -= 60;
@@ -80,15 +63,16 @@ function sum() {
 }
 
 function out(hour, minute, second) {
-    outHour.value = hour;
-    outMin.value = minute;
-    outSec.value = second;
+    outHourEl.value = hour;
+    outMinEl.value = minute;
+    outSecEl.value = second;
 
-    fullOut.innerHTML = `${addZero(hour)}:${addZero(minute)}:${addZero(
+    fullOutEl.innerHTML = `${addZero(hour)}:${addZero(minute)}:${addZero(
         second
     )}`;
 }
 
-function addZero(input) {
-    return input > 9 ? input : `0${input}`;
-}
+const addZero = (input) => (input > 9 ? input : `0${input}`);
+
+sumEl.addEventListener('click', sum);
+subtractEl.addEventListener('click', subtract);
