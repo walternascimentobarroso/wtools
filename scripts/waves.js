@@ -84,10 +84,9 @@
             canvas.width = width;
             canvas.height = height;
         } else {
+            canvas.width = 1920;
             if (window.innerHeight > 1920) {
                 canvas.width = window.innerWidth;
-            } else {
-                canvas.width = 1920;
             }
 
             canvas.height = waveHeight;

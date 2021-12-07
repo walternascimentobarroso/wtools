@@ -37,6 +37,8 @@ const cards = [
     { url: '/colorPicker.html', description: 'ColorPicker' },
     { url: '/vCard.html', description: 'vCard' },
     { url: '/emailSignature.html', description: 'Email Signature' },
+    { url: '/translateText.html', description: 'Translate Text' },
+    { url: '/translateTextI18n.html', description: 'Translate Text With i18n' },
 ];
 
 function loadCard() {
