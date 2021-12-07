@@ -35,6 +35,8 @@ const cards = [
     { url: '/todoLocalStorage.html', description: 'TODO with LocalStorage' },
     { url: '/quiz.html', description: 'Quiz' },
     { url: '/colorPicker.html', description: 'ColorPicker' },
+    { url: '/vCard.html', description: 'vCard' },
+    { url: '/emailSignature.html', description: 'Email Signature' },
 ];
 
 function loadCard() {
