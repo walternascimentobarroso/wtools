@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <h1>Gerador de Assinatura de E-mail</h1>
+            <div
+                style="
+                    width: 38%;
+                    display: inline-block;
+                    text-align: center;
+                    min-width: 40vw;
+                "
+            >
+                <form name="form_main">
+                    <fieldset>
+                        <legend>Dados Gerais</legend>
+                        <div>
+                            <label for="nameEl">Nome: </label>
+                            <input name="nameEl" id="nameEl" />
+                        </div>
+                        <div>
+                            <label for="roleEl">Cargo: </label>
+                            <input name="roleEl" id="roleEl" />
+                        </div>
+                        <div>
+                            <label for="emailEl">Email: </label>
+                            <input name="emailEl" id="emailEl" />
+                        </div>
+                        <div>
+                            <label for="phoneEl">Telefone: </label>
+                            <input name="phoneEl" id="phoneEl" />
+                        </div>
+                        <div>
+                            <label for="companyEl">Empresa: </label>
+                            <input name="companyEl" id="companyEl" />
+                        </div>
+                        <div>
+                            <label for="siteEl">Site: </label>
+                            <input name="siteEl" id="siteEl" />
+                        </div>
+                        <div>
+                            <label for="adressEl">Endereço: </label>
+                            <input name="adressEl" id="adressEl" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Redes Sociais</legend>
+                        <div>
+                            <label for="linkedinEl">Linkedin: </label>
+                            <input name="linkedinEl" id="linkedinEl" />
+                        </div>
+                        <div>
+                            <label for="twitterEl">Twitter: </label>
+                            <input name="twitterEl" id="twitterEl" />
+                        </div>
+                        <div>
+                            <label for="facebookEl">Facebook: </label>
+                            <input name="facebookEl" id="facebookEl" />
+                        </div>
+                        <div>
+                            <label for="skypeEl">Skype: </label>
+                            <input name="skypeEl" id="skypeEl" />
+                        </div>
+                        <div>
+                            <label for="youtubeEl">Youtube: </label>
+                            <input name="youtubeEl" id="youtubeEl" />
+                        </div>
+                        <div>
+                            <label for="instagramEl">Instagram: </label>
+                            <input name="instagramEl" id="instagramEl" />
+                        </div>
+                        <div>
+                            <label for="devtoEl">DevTO: </label>
+                            <input name="devtoEl" id="devtoEl" />
+                        </div>
+                        <div>
+                            <label for="githubEl">GitHub: </label>
+                            <input name="githubEl" id="githubEl" />
+                        </div>
+                        <div>
+                            <label for="whatsappEl">Whatsapp: </label>
+                            <input name="whatsappEl" id="whatsappEl" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Imagens</legend>
+                        <div>
+                            <label for="photoEl">Foto: </label>
+                            <input name="photoEl" id="photoEl" />
+                        </div>
+                        <div>
+                            <label for="linkPhotoEl">
+                                Link de redirecionamento:
+                            </label>
+                            <input name="linkPhotoEl" id="linkPhotoEl" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Banner</legend>
+                        <div>
+                            <label for="bannerEl">Banner: </label>
+                            <input name="bannerEl" id="bannerEl" />
+                        </div>
+                        <div>
+                            <label for="linkBannerEl"
+                                >Link de redirecionamento:
+                            </label>
+                            <input name="linkBannerEl" id="linkBannerEl" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Estilo</legend>
+                        <div>
+                            <label for="sizeEl">Tamanho da Font: </label>
+                            <input type="number" name="sizeEl" id="sizeEl" />
+                        </div>
+                        <div>
+                            <label for="colorEl">Cor da Font: </label>
+                            <input type="color" name="colorEl" id="colorEl" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mensagem</legend>
+                        <div>
+                            <label for="ptEl">Português: </label>
+                            <input type="checkbox" name="ptEl" id="ptEl" />
+                        </div>
+                        <div>
+                            <label for="enEl">Inglês: </label>
+                            <input type="checkbox" name="enEl" id="enEl" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div style="width: 38%; min-width: 40vw; float: right">
+                <button id="clipboardCopyEl">Copiar Assinatura</button>
+                <output id="outputEl"></output>
+            </div>
+
+            <div>
+                <h2>Adicionar No Gmail</h2>
+
+                <ul>
+                    <li>
+                        Vá até gmail.com e faça login na sua conta de email.
+                    </li>
+                    <li>
+                        Clique no ícone da engrenagem no canto superior direito
+                        e clique em 'Configurações'.
+                    </li>
+                    <li>
+                        Desça a tela até encontrar a seção de assinatura de
+                        e-mail, que contém um editor de texto.
+                    </li>
+                    <li>
+                        Cole a sua nova assinatura nesse editor de texto e
+                        clique em 'salvar alterações'.
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/emailSignature.js"></script>
+    </body>
+</html>
