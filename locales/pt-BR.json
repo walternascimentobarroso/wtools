@@ -1,0 +1,9 @@
+{
+    "translation": {
+        "title": "{{what}} em portugues",
+        "button": {
+            "save": "salvo {{count}} alteração",
+            "save_plural": "salvo {{count}} alterações"
+        }
+    }
+}
