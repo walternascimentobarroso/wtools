@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WTOOLS</title>
+        <style>
+            span {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                background: blue;
+                align-items: center;
+                justify-content: center;
+                margin-left: 5px;
+            }
+
+            .list {
+                width: 40px;
+                height: 40px;
+                /* background: blue; */
+                align-self: center;
+                margin-left: 5px;
+            }
+
+            .list-item {
+                width: 40px;
+                height: 40px;
+                background: blue;
+                margin-top: 5px;
+                padding-top: 20px;
+                text-align: center;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <menu></menu>
+
+        <main>
+            <div>
+                <button id="sortNumberEl">Sort Number</button>
+                <button id="resetEl">Reset</button>
+            </div>
+            <div>
+                <output id="outputEl">...</output>
+            </div>
+            <div>
+                <output id="historyEl">...</output>
+            </div>
+            <div style="display: flex">
+                <span>B</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+                <span>O</span>
+            </div>
+            <div style="display: flex">
+                <div class="item-b list"></div>
+                <div class="item-i list"></div>
+                <div class="item-n list"></div>
+                <div class="item-g list"></div>
+                <div class="item-o list"></div>
+            </div>
+        </main>
+
+        <footer></footer>
+
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/footer.js"></script>
+        <script src="scripts/bingo.js"></script>
+    </body>
+</html>
