@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="theme-color", content="#ee0979")
+        link(href="css/index.css", rel="stylesheet")
+        link(rel="icon", href="img/favicon.png")
+        title Wtools
+    body
+        .topnav
+            a(href="/").brand Wtools
+            a(href="/") Wtools
+
+        nav#menu
+            ul
+                li
+                    a(href="/") Inicio
+                li
+                    a(href="#").clearlink Geradores
+                    ul.submenu
+                        li
+                            a(href="persona.html") Gerador de persona
+                        li
+                            a(href="cpf.html") CPF
+                        li
+                            a(href="cnpj.html") CNPJ
+                        li
+                            a(href="password.html") Gerador de Senha
+                li
+                    a(href="#").clearlink Texto
+                    ul.submenu
+                        li
+                            a(href="lorem.html") Lorem Ipsum
+                        li
+                            a(href="upperandlower.html") Maiúsculas <> Minúsculas
+                li
+                    a(href="#").clearlink Rede
+                    ul.submenu
+                        li
+                            a(href="data.html") Informações Rede
+                li
+                    a(href="#").clearlink Cores
+                    ul.submenu
+                        li
+                            a(href="rgbtohex.html") RGB <> HEX
+                li
+                    a(href="#").clearlink Outras
+                    ul.submenu
+                        li
+                            a(href="htmltopug.html") HTML <> PUG
+                        li
+                            a(href="imgdata.html") Imagem (Base64)
+                        li
+                            a(href="genaretefavicon.html") Gerador de Favicon
+                li
+                    a(href="qrcode.html") Gerador QRcode
+                li
+                    a(href="#").clearlink Plugins
+                    ul.submenu
+                        li
+                            a(href="whatsapp.html") Whatsapp
+                        li
+                            a(href="scrooltop.html") ScroolTop
+                li
+                    a(href="about.html") Sobre
+        main
+            block content
+        block scripts

@@ -1,0 +1,38 @@
+extends layout.pug
+
+block content
+    form
+        p
+            input(name="cpf")
+            //- span Estado de Origem do CPF
+            //- span copiar cpf
+        p
+            button(type='button', name='generate') Gerar CPF
+            button(type='button', name='validate') Validar CPF
+            input(type='checkbox', name='deletePoint', checked)
+            | Pontuação 
+
+        div 
+            h1 Algoritmo
+            p 
+            | O CPF é composto por onze algarismos, em que os dois últimos são chamados de dígitos verificadores, 
+            | criados a partir dos nove primeiros, validando o número como um todo. 
+            | O cálculo desses dígitos é realizado em duas etapas utilizando o módulo de divisão 11.
+
+            h1 Como conferir a origem de um CPF
+            p
+            | O último dígito anterior aos dois dígitos de controle identifica a unidade federativa na qual a pessoa foi registrada (ex: 000.000.006-00).
+            | 0 - Rio Grande do Sul
+            | 1 - Distrito Federal, Goiás, Mato Grosso do Sul e Tocantins
+            | 2 - Pará, Amazonas, Acre, Amapá, Rondônia e Roraima
+            | 3 - Ceará, Maranhão e Piauí
+            | 4 - Pernambuco, Rio Grande do Norte, Paraíba e Alagoas
+            | 5 - Bahia e Sergipe
+            | 6 - Minas Gerais
+            | 7 - Rio de Janeiro e Espírito Santo
+            | 8 - São Paulo
+            | 9 - Paraná e Santa Catarina
+                    
+block scripts
+    script(src="js/cpf.js")
+

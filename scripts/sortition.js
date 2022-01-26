@@ -2,11 +2,8 @@
 
 playEl.addEventListener('click', main);
 
-function getRandom(min = 0, max = 2) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-}
+const getRandom = (min = 0, max = 2) =>
+    Math.floor(Math.random() * (max - min)) + min;
 
 function dateNow(input = Date.now()) {
     let date = new Date(input);
@@ -31,7 +28,7 @@ function generateTable(table, data) {
 function main() {
     resultEl.style.display = 'none';
     let loop = inputEl.value;
-    let ini = inputIniEl.value;
+    let ini = parseInt(inputIniEl.value);
     let end = parseInt(inputEndEl.value) + 1;
     let result = [];
 

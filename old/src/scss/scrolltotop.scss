@@ -1,0 +1,14 @@
+#scrollToTop {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    border-radius: 50%;
+    background-color: #337ab7;
+    padding: 15px !important;
+    :hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(deg);
+        -webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+        transition: width 0.5s, height 0.5s, transform 0.5s;
+    }    
+}

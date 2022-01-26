@@ -5,6 +5,7 @@ const mainEl = document.querySelector('main');
 const cards = [
     { url: '/whatsapp.html', description: 'Whatsapp' },
     { url: '/validatorPassword.html', description: 'Validator Password' },
+    { url: '/validationPassword2.html', description: 'Validator Password 2' },
     { url: '/transformingLetters.html', description: 'Transforming Letters' },
     { url: '/temperatureAPI.html', description: 'Temperature API' },
     { url: '/stopwatch.html', description: 'Stopwatch' },
@@ -39,6 +40,7 @@ const cards = [
     { url: '/emailSignature.html', description: 'Email Signature' },
     { url: '/translateText.html', description: 'Translate Text' },
     { url: '/translateTextI18n.html', description: 'Translate Text With i18n' },
+    { url: '/bingo.html', description: 'Bingo' },
 ];
 
 function loadCard() {
