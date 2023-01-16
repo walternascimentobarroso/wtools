@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+
+:root {
+  --primary: #fc00ff;
+  --secondary: #00dbde;
+  --dark: #212121;
+  --light: #f3f3f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", montserrat, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.cardFlip {
+  margin: 100px auto 0;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.cardFlip-content {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.cardFlip-content.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.cardFlip-inside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.cardFlip-inside--front {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardFlip-inside--front h2 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.cardFlip-inside--back {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.cardFlip-back-content {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin: 50px;
+}
